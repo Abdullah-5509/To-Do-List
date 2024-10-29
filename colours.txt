@@ -1,0 +1,13 @@
+Dark Mode
+    Text-#ffffff
+    Backgroud-#000000
+    Primary-#ffffff
+    Secondary-#696969
+    Accent-#d9d9d9
+Light Mode
+    Text-#000000
+    Backgroud-#ffffff
+    Primary-#000000
+    Secondary-#969696
+    Accent-#262626
+    

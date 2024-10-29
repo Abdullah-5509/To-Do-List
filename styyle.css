@@ -1,0 +1,105 @@
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgb(0, 0, 0);
+            padding: 5px;
+        }
+        .To-Do{
+            width: 100%;
+            max-width: 450px;
+            background: #fff;
+            margin: 30px auto;
+            padding: 40px 20px 70px 20px;
+            border-radius: 20px;
+            position: relative;
+            
+        }
+        .To-Do h2{
+            color: black;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .To-Do h2 img{
+            width: 30px;
+            margin-right: 10px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #dadada;
+            border-radius: 20px;
+            padding-left: 10px;
+
+        }
+        input{
+        flex: 1;
+        background: none;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+        font-weight: 10px; 
+        }
+        button{
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            background: #696969;
+            color: #ffffff; 
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        ul{
+            padding: 10px;
+        }
+        ul li{
+            list-style: none;
+            font-size: 17px;
+            padding: 10px 8px 12px 50px;
+            user-select: none;
+            cursor: pointer;
+            position: relative;
+
+        }
+        ul li::before{
+            content: '';
+            position: absolute;
+            height: 28px;
+            width: 28px;
+            border-radius: 20px;
+            background-image: url(Images/circle.png);
+            background-size: cover;
+            background-position: center;
+            top: 12px;
+            left: 8px;
+        }
+        ul li.Compleated{
+            color: rgb(54, 54, 54);
+            text-decoration: line-through;
+        }
+        ul li.Compleated::before{
+            background-image: url(Images/check.png);
+        }
+        ul li span{
+            position: absolute;
+            right: 0;
+            top: 5px;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+        }
+        ul li span:hover{
+            background: #dddddd;
+        }
